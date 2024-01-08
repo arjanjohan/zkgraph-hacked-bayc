@@ -1,15 +1,15 @@
 specVersion: 0.0.2
 apiVersion: 0.0.2
 name: eg_hello
-description: "This demo zkGraph always set a ascii string as the output state. "
-repository: https://github.com/hyperoracle/zkgraph
+description: "This zkGraph will access historical ownership of the BAYC nft collection and information about know exploits and scams that have targeted BAYC "
+repository: https://github.com/arjanjohan/zkgraph-hacked-bayc
 dataSources:
   - kind: ethereum
-    network: sepolia
+    network: mainnet
     event:
-      - address: '0xFA5Db19087920F5d0e71d0373F099bd0C03589DA'
+      - address: '0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D'
         events: 
-          - "Sync(uint112,uint112)"
+          - "Transfer(address,address,uint256)"
 
 mapping:
   language: wasm/assemblyscript
@@ -18,5 +18,5 @@ mapping:
 
 dataDestinations:
   - kind: ethereum
-    network: sepolia
+    network: mainnet
     address: "0x0000000000000000000000000000000000000001"

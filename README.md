@@ -1,4 +1,6 @@
-# zkGraph hello template
+# zkGraph BAYC hacked
+
+Using zkGraph we keep track of which BAYC have been stolen, and how many times they have been stolen. 
 
 ## Usage CLI
 
