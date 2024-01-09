@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 apiVersion: 0.0.2
-name: eg_hello
+name: hacker_bayc
 description: "This zkGraph will access historical ownership of the BAYC nft collection and information about know exploits and scams that have targeted BAYC "
 repository: https://github.com/arjanjohan/zkgraph-hacked-bayc
 dataSources:
