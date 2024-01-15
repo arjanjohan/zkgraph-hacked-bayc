@@ -14,9 +14,10 @@ export function handleBlocks(blocks: Block[]): Bytes {
   let bayc_holders: ByteArray = ByteArray.empty();
   for (let i = events.length - 1; i >= 0; i--) {
     if (events[i].address == bayc_address && events[i].esig == transfer_event) {
-      bayc_holders.concat(events[i].topic2);
+      bayc_holders = bayc_holders.concat(events[i].topic2);
     }
   }
+
   let state = Bytes.fromByteArray(bayc_holders);
 
   return state;

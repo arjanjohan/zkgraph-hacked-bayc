@@ -3,12 +3,7 @@
 # Update `zkgraph.config.ts` with your own parameters first!
 # Then run `sh test.sh`
 
-# npm run compile-local &&
-# npm run exec-local -- 5087832 &&
-# npm run prove-local -- --inputgen <blockId> <expectedStateStr> &&
-# npm run prove-local -- --test <blockId> <expectedStateStr>
-
 npm run compile &&
 npm run exec -- 19003210 &&
-npm run prove -- --inputgen 19003210 '<expectedStateStr>' &&
-npm run prove -- --test 19003210 <expectedStateStr>
+npm run prove -- --inputgen 19003210 00000000000000000000000000000000440bcc7a1cf465eafabae301d1d7739cbfe09dda0000000000000000000000002e7573445b46a305f6b80f86ba56e788b2db7e68000000000000000000000000440bcc7a1cf465eafabae301d1d7739cbfe09dda000000000000000000000000440bcc7a1cf465eafabae301d1d7739cbfe09dda &&
+npm run prove -- --test 19003210 00000000000000000000000000000000440bcc7a1cf465eafabae301d1d7739cbfe09dda0000000000000000000000002e7573445b46a305f6b80f86ba56e788b2db7e68000000000000000000000000440bcc7a1cf465eafabae301d1d7739cbfe09dda000000000000000000000000440bcc7a1cf465eafabae301d1d7739cbfe09dda
